@@ -80,7 +80,8 @@ function layoutMasonry() {
     const containerWidth = gridContainer.getBoundingClientRect().width;
     if (containerWidth === 0) return; // 画面幅0の場合は計算しない
     
-    const cardGap = 25; // カード間の距離（余白）
+    // 画面幅に応じて隙間を調整（スマホは狭く、PCは広く）
+    const cardGap = containerWidth < 480 ? 15 : 25; 
     const gridUnit = 5; // 計算の解像度（小さいほど正確に詰まる）
     const cols = Math.floor(containerWidth / gridUnit);
     const heights = new Array(cols).fill(0);

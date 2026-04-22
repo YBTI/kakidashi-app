@@ -42,6 +42,22 @@ body {
     color: #ffffff;
     opacity: 0.9;
     font-family: 'Noto Serif JP', serif; /* クラシックな明朝体 */
+    transition: font-size 0.3s;
+}
+
+@media (max-width: 768px) {
+    #site-header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #site-header {
+        padding: 60px 0 30px 0;
+    }
+    #site-header h1 {
+        font-size: 3rem;
+    }
 }
 
 /* Masonry Grid (Absolute Positioned via JS) */
@@ -300,10 +316,22 @@ body {
     transform: translateY(0);
 }
 
-.error-text {
-    color: #ffcccc;
-    font-size: 0.8rem;
-    margin-top: 20px;
-    letter-spacing: 0.05em;
+@media (max-width: 480px) {
+    .auth-content h1 {
+        font-size: 4rem;
+    }
+    .auth-content p {
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 30px;
+    }
+    #password-input {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+    #auth-submit {
+        width: 100%;
+        padding: 12px 0;
+    }
 }
 
