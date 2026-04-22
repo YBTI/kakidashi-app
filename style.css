@@ -1,0 +1,209 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* より鮮やかなピンク寄りのマジックアワー・グラデーション */
+    background: linear-gradient(180deg, #6a5acd 0%, #da70d6 35%, #ff69b4 65%, #ffb6c1 100%);
+    background-attachment: fixed;
+    color: #333333;
+    font-family: 'Noto Serif JP', serif;
+    min-height: 100vh;
+}
+
+#app {
+    width: 100%;
+}
+
+/* Viewer Layout (Vertical Scroll) */
+#viewer {
+    width: 100%;
+    padding: 20px 4vw 100px 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Site Header */
+#site-header {
+    width: 100%;
+    padding: 80px 0 40px 0;
+    text-align: center;
+    pointer-events: none;
+}
+
+#site-header h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    opacity: 0.9;
+    font-family: 'Noto Serif JP', serif; /* クラシックな明朝体 */
+}
+
+/* Masonry Grid (Absolute Positioned via JS) */
+#kakidashi-grid {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* height is set dynamically by JS */
+}
+
+/* Card Style */
+.kakidashi-card {
+    position: absolute;
+    width: fit-content;
+    min-width: 40px;
+    border: none; /* 枠線を完全に削除 */
+    background-color: rgba(255, 255, 255, 0.3); /* さらに透過させて背景に馴染ませる */
+    backdrop-filter: blur(12px);
+    writing-mode: vertical-rl;
+    padding: 25px 12px;
+    cursor: default;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* 影もより控えめに */
+    
+    /* Animation Initial State */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), 
+                transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+                left 0.8s ease, top 0.8s ease,
+                background-color 0.3s ease;
+}
+
+.kakidashi-card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.kakidashi-card p {
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    color: #333333;
+    /* font-size は JS でランダムに設定 */
+}
+
+/* Card Hover */
+.kakidashi-card {
+    cursor: pointer;
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), 
+                transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+                left 0.8s ease, top 0.8s ease,
+                border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.kakidashi-card:hover {
+    background-color: rgba(255, 255, 255, 0.45); /* ホバー時も透過を維持しつつ、少し明るく */
+}
+
+/* Reader Modal */
+#reader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    backdrop-filter: blur(5px);
+}
+
+#reader-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 読みやすさ重視のリーダーコンテナ（横書き・縦スクロール） */
+.reader-container {
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.reader-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
+
+#reader-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333333;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#close-reader {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #999999;
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+#close-reader:hover {
+    color: #333333;
+}
+
+.reader-content-area {
+    flex-grow: 1;
+    overflow-y: auto; /* 縦スクロール */
+    padding: 40px;
+    scroll-behavior: smooth;
+}
+
+/* 読みやすい記事レイアウト */
+#reader-text {
+    font-size: 1.1rem;
+    line-height: 2.2;
+    letter-spacing: 0.05em;
+    color: #333333;
+    white-space: pre-wrap; /* 改行を反映 */
+    max-width: 700px; /* 一行の文字数が多すぎないように */
+    margin: 0 auto;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .reader-container {
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .reader-content-area {
+        padding: 30px 20px;
+    }
+    #reader-text {
+        font-size: 1.0rem;
+    }
+}

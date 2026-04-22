@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書き出し - 言葉の余白</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="物語の最初の一文だけが静かに流れる、極めてミニマルな空間。">
+</head>
+<body>
+    <div id="app">
+        <!-- サイトヘッダー -->
+        <header id="site-header">
+            <h1>W.</h1>
+        </header>
+
+        <!-- メインビューアー（縦スクロールグリッド） -->
+        <main id="viewer">
+            <div id="kakidashi-grid">
+                <!-- script.js によってカードが生成される -->
+            </div>
+        </main>
+
+        <!-- リーダーモーダル（横書き・縦スクロール） -->
+        <div id="reader-overlay" class="hidden">
+            <div class="reader-container">
+                <header class="reader-header">
+                    <h1 id="reader-title"></h1>
+                    <button id="close-reader" aria-label="閉じる">✕</button>
+                </header>
+                <div class="reader-content-area">
+                    <div id="reader-text">読み込み中...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

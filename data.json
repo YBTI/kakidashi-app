@@ -1,0 +1,52 @@
+[
+    {
+        "id": "story1",
+        "title": "人間は、走る人の考えと、歩く人の考えと、座っている人の考えが異なる。",
+        "file": "stories/story1.txt"
+    },
+    {
+        "id": "story2",
+        "title": "それぞれ、神様の仕事をするとき使うようにとくださった能力がある。",
+        "file": "stories/story2.txt"
+    },
+    {
+        "id": "story3",
+        "title": "いつの間にか、縮小した一つの歳月が過ぎ、また一つの歳月が来た。",
+        "file": "stories/story3.txt"
+    },
+    {
+        "id": "story4",
+        "title": "行く道は遠いが経ながら行なうから手に負えそうだ。",
+        "file": "stories/story4.txt"
+    },
+    {
+        "id": "story5",
+        "title": "最近は山の向こうから春風と共に息を切らしている声が聞こえてくる。うれしい声だ。",
+        "file": "stories/story5.txt"
+    },
+    {
+        "id": "story6",
+        "title": "いつも測量するときは測量基準点から測量をしてこそ、公義だ",
+        "file": "stories/story6.txt"
+    },
+    {
+        "id": "story7",
+        "title": "聖霊の体になり、神様が言う通りに信じて行なえばしるしが起こる。",
+        "file": "stories/story7.txt"
+    },
+    {
+        "id": "story8",
+        "title": "人生その時その時気分で舞い上がり、心配でへたり込み、悲しみで泣く。",
+        "file": "stories/story8.txt"
+    },
+    {
+        "id": "story9",
+        "title": "走るとき、隣の人を見て足並みを揃えて走ったときに、行けないはずの人も行けるようになる。",
+        "file": "stories/story9.txt"
+    },
+    {
+        "id": "story10",
+        "title": "険しい人生の波をかき分けて進みつつ大胆に行ないなさい。",
+        "file": "stories/story10.txt"
+    }
+]
