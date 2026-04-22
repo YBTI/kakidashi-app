@@ -11,7 +11,20 @@
     <meta name="description" content="物語の最初の一文だけが静かに流れる、極めてミニマルな空間。">
 </head>
 <body>
-    <div id="app">
+    <!-- 認証ゲート（パスワード入力画面） -->
+    <div id="auth-gate">
+        <div class="auth-content">
+            <h1>W.</h1>
+            <p>Password Required</p>
+            <div class="auth-input-group">
+                <input type="password" id="password-input" placeholder="••••••">
+                <button id="auth-submit">Enter</button>
+            </div>
+            <p id="auth-error" class="error-text hidden">Invalid password. Please try again.</p>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
         <!-- サイトヘッダー -->
         <header id="site-header">
             <h1>W.</h1>

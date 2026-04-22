@@ -5,6 +5,16 @@ const readerTitle = document.getElementById('reader-title');
 const readerText = document.getElementById('reader-text');
 const closeReaderBtn = document.getElementById('close-reader');
 
+// 認証関連のエレメント
+const authGate = document.getElementById('auth-gate');
+const passwordInput = document.getElementById('password-input');
+const authSubmitBtn = document.getElementById('auth-submit');
+const authError = document.getElementById('auth-error');
+const appContainer = document.getElementById('app');
+
+// 固定パスワード（ここで変更可能です）
+const FIXED_PASSWORD = '846104';
+
 let postsData = [];
 
 // IntersectionObserverの設定（順次表示アニメーション用）
@@ -25,6 +35,11 @@ const observer = new IntersectionObserver((entries) => {
 
 // データ取得と初期化
 async function initApp() {
+    // すでに認証済みかチェック
+    if (sessionStorage.getItem('kakidashi_authed') === 'true') {
+        showApp(true); // 即座に表示
+    }
+
     try {
         // キャッシュを防ぐためにタイムスタンプを付与（開発用）
         const response = await fetch('data.json?' + new Date().getTime());
@@ -223,6 +238,43 @@ let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(layoutMasonry, 100);
+});
+
+// ----------------------------------------
+// 認証（パスワードゲート）の制御
+// ----------------------------------------
+
+function handleAuth() {
+    const input = passwordInput.value;
+    if (input === FIXED_PASSWORD) {
+        // 認証成功
+        sessionStorage.setItem('kakidashi_authed', 'true');
+        showApp();
+    } else {
+        // 認証失敗
+        authError.classList.remove('hidden');
+        passwordInput.value = '';
+        passwordInput.focus();
+    }
+}
+
+function showApp(immediate = false) {
+    if (immediate) {
+        authGate.style.display = 'none';
+        appContainer.classList.remove('hidden');
+    } else {
+        authGate.classList.add('fade-out');
+        setTimeout(() => {
+            authGate.style.display = 'none';
+            appContainer.classList.remove('hidden');
+        }, 800);
+    }
+}
+
+// 認証イベントリスナー
+authSubmitBtn.addEventListener('click', handleAuth);
+passwordInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleAuth();
 });
 
 // 初期表示開始

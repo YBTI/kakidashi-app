@@ -207,3 +207,103 @@ body {
         font-size: 1.0rem;
     }
 }
+
+/* ---------------------------------------- */
+/* Auth Gate Styles */
+/* ---------------------------------------- */
+
+#auth-gate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #6a5acd 0%, #da70d6 35%, #ff69b4 65%, #ffb6c1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#auth-gate.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.auth-content {
+    text-align: center;
+    color: #ffffff;
+    max-width: 400px;
+    width: 90%;
+}
+
+.auth-content h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+
+.auth-content p {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.auth-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#password-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#password-input:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+#auth-submit {
+    background: #ffffff;
+    color: #333333;
+    border: none;
+    padding: 12px 40px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+#auth-submit:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+#auth-submit:active {
+    transform: translateY(0);
+}
+
+.error-text {
+    color: #ffcccc;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    letter-spacing: 0.05em;
+}
+
