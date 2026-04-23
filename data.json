@@ -1,52 +1,342 @@
 [
-    {
-        "id": "story1",
-        "title": "人間は、走る人の考えと、歩く人の考えと、座っている人の考えが異なる。",
-        "file": "stories/story1.txt"
-    },
-    {
-        "id": "story2",
-        "title": "それぞれ、神様の仕事をするとき使うようにとくださった能力がある。",
-        "file": "stories/story2.txt"
-    },
-    {
-        "id": "story3",
-        "title": "いつの間にか、縮小した一つの歳月が過ぎ、また一つの歳月が来た。",
-        "file": "stories/story3.txt"
-    },
-    {
-        "id": "story4",
-        "title": "行く道は遠いが経ながら行なうから手に負えそうだ。",
-        "file": "stories/story4.txt"
-    },
-    {
-        "id": "story5",
-        "title": "最近は山の向こうから春風と共に息を切らしている声が聞こえてくる。うれしい声だ。",
-        "file": "stories/story5.txt"
-    },
-    {
-        "id": "story6",
-        "title": "いつも測量するときは測量基準点から測量をしてこそ、公義だ",
-        "file": "stories/story6.txt"
-    },
-    {
-        "id": "story7",
-        "title": "聖霊の体になり、神様が言う通りに信じて行なえばしるしが起こる。",
-        "file": "stories/story7.txt"
-    },
-    {
-        "id": "story8",
-        "title": "人生その時その時気分で舞い上がり、心配でへたり込み、悲しみで泣く。",
-        "file": "stories/story8.txt"
-    },
-    {
-        "id": "story9",
-        "title": "走るとき、隣の人を見て足並みを揃えて走ったときに、行けないはずの人も行けるようになる。",
-        "file": "stories/story9.txt"
-    },
-    {
-        "id": "story10",
-        "title": "険しい人生の波をかき分けて進みつつ大胆に行ないなさい。",
-        "file": "stories/story10.txt"
-    }
+  {
+    "id": "story1",
+    "title": "聖霊の声だ。私聖霊は感動の神だと言っただろう？",
+    "file": "stories/story1.txt"
+  },
+  {
+    "id": "story2",
+    "title": "新しい時代は昇る日で、古い時代は沈む日だ。",
+    "file": "stories/story2.txt"
+  },
+  {
+    "id": "story3",
+    "title": "いいスタートをきってはじめて、目的地に行くのだ。",
+    "file": "stories/story3.txt"
+  },
+  {
+    "id": "story4",
+    "title": "初めから終わりまで神様の御心にだけ従って行なおう。",
+    "file": "stories/story4.txt"
+  },
+  {
+    "id": "story5",
+    "title": "丙午の年、赤い馬の年",
+    "file": "stories/story5.txt"
+  },
+  {
+    "id": "story6",
+    "title": "うまくできる方法がある。",
+    "file": "stories/story6.txt"
+  },
+  {
+    "id": "story7",
+    "title": "すべての万物と人間は相性（あいしょう）の理致だ。相性が合う相手に会って一つになって行なうのだ。",
+    "file": "stories/story7.txt"
+  },
+  {
+    "id": "story8",
+    "title": "完全でない生き方をしたら死んだ人生の生だ。",
+    "file": "stories/story8.txt"
+  },
+  {
+    "id": "story9",
+    "title": "現実で直面する苦痛を経ながら理想世界を行く。",
+    "file": "stories/story9.txt"
+  },
+  {
+    "id": "story10",
+    "title": "寒いけれど、みんな神様、聖霊、御子に思い切り栄光を帰しなさい。",
+    "file": "stories/story10.txt"
+  },
+  {
+    "id": "story11",
+    "title": "神様に栄光を帰して15日間の宴会は終わったけれども、",
+    "file": "stories/story11.txt"
+  },
+  {
+    "id": "story12",
+    "title": "神様は時の全能者だ。時に従って行ないなさい。",
+    "file": "stories/story12.txt"
+  },
+  {
+    "id": "story13",
+    "title": "人生は平素の生だ。",
+    "file": "stories/story13.txt"
+  },
+  {
+    "id": "story14",
+    "title": "砂利、道端、茨のような心だったら、受けることができない。",
+    "file": "stories/story14.txt"
+  },
+  {
+    "id": "story15",
+    "title": "いつも用意し備えて走ることだ。",
+    "file": "stories/story15.txt"
+  },
+  {
+    "id": "story16",
+    "title": "次元を上げてこそうまくいく。",
+    "file": "stories/story16.txt"
+  },
+  {
+    "id": "story17",
+    "title": "次元は変化だ",
+    "file": "stories/story17.txt"
+  },
+  {
+    "id": "story18",
+    "title": "一次元上げることがどれほど大きいか分かって、",
+    "file": "stories/story18.txt"
+  },
+  {
+    "id": "story19",
+    "title": "世の中に貴重な宝はたくさんあるけれども、最高に貴重な宝は何だろうか。",
+    "file": "stories/story19.txt"
+  },
+  {
+    "id": "story20",
+    "title": "すべての理致は共通性だ。",
+    "file": "stories/story20.txt"
+  },
+  {
+    "id": "story21",
+    "title": "古い時代過ぎ去り、新しい時代へ",
+    "file": "stories/story21.txt"
+  },
+  {
+    "id": "story22",
+    "title": "死を目前にして追われた時に、超人のように走って、飛んでいく。",
+    "file": "stories/story22.txt"
+  },
+  {
+    "id": "story23",
+    "title": "様の仕事は、行ないながらも分からないことが多すぎる。",
+    "file": "stories/story23.txt"
+  },
+  {
+    "id": "story24",
+    "title": "行なう時、与えられた機会の時にちゃんと正しく、未練も残らないように、精密に行ないなさい。",
+    "file": "stories/story24.txt"
+  },
+  {
+    "id": "story25",
+    "title": "まず認識を正しくできるようにしてあげて話しなさい。",
+    "file": "stories/story25.txt"
+  },
+  {
+    "id": "story26",
+    "title": "人生はあのようにこのように料理をするように生きる生なのだ。",
+    "file": "stories/story26.txt"
+  },
+  {
+    "id": "story27",
+    "title": "摂理史みんなこの精神で最後まで希望を持って走り、行なおう。",
+    "file": "stories/story27.txt"
+  },
+  {
+    "id": "story28",
+    "title": "すべての万物と人間は力で存在する。",
+    "file": "stories/story28.txt"
+  },
+  {
+    "id": "story29",
+    "title": "人は見たくないこと聞きたくないことは糸一本ぐらいのことでも嫌う。",
+    "file": "stories/story29.txt"
+  },
+  {
+    "id": "story30",
+    "title": "心を、ごみ箱を空けるように必ず随時空けてこそ心がきれいだ。",
+    "file": "stories/story30.txt"
+  },
+  {
+    "id": "story31",
+    "title": "聖書で心に関して数千箇所話しているから聖書を読んで心を治め、つくるべきだ。",
+    "file": "stories/story31.txt"
+  },
+  {
+    "id": "story32",
+    "title": "怠けたら、よいこともなんでもないことに見え、やりたくなくなる。",
+    "file": "stories/story32.txt"
+  },
+  {
+    "id": "story33",
+    "title": "神様の御心が、地球が回るように回っていく。",
+    "file": "stories/story33.txt"
+  },
+  {
+    "id": "story34",
+    "title": "聖霊の経緯に載せたらみんな聞いてその通りにすべきだ。",
+    "file": "stories/story34.txt"
+  },
+  {
+    "id": "story35",
+    "title": "春になったといってみんな心ばかりときめくのではなく、体もときめかなければならない。",
+    "file": "stories/story35.txt"
+  },
+  {
+    "id": "story36",
+    "title": "腹が立っても線を越えるな。",
+    "file": "stories/story36.txt"
+  },
+  {
+    "id": "story37",
+    "title": "知らなければ、神様が最高によくなる道を行かせてくださっても、ふてくされ、見向きもしない。",
+    "file": "stories/story37.txt"
+  },
+  {
+    "id": "story38",
+    "title": "真理は神様が遣わした人だ。",
+    "file": "stories/story38.txt"
+  },
+  {
+    "id": "story39",
+    "title": "すみずみまできれいに体を洗って垢を擦っても数日も経たないうちにまた垢が体中を覆った。",
+    "file": "stories/story39.txt"
+  },
+  {
+    "id": "story40",
+    "title": "どのような人がはやく引き上げられ引き上げの次元をはやく上げられるか分かるか。",
+    "file": "stories/story40.txt"
+  },
+  {
+    "id": "story41",
+    "title": "黄金天国の霊魂たちどんなによいか。",
+    "file": "stories/story41.txt"
+  },
+  {
+    "id": "story42",
+    "title": "心の窓を開けて世の中を見なさい。",
+    "file": "stories/story42.txt"
+  },
+  {
+    "id": "story43",
+    "title": "みんな行事の準備のためにご苦労だった。",
+    "file": "stories/story43.txt"
+  },
+  {
+    "id": "story44",
+    "title": "みんな行事を無事に、何の事故もなく終わらせるまでご苦労様だった。",
+    "file": "stories/story44.txt"
+  },
+  {
+    "id": "story45",
+    "title": "わが故郷3月になれば天の雲全世界から群がって来る。",
+    "file": "stories/story45.txt"
+  },
+  {
+    "id": "story46",
+    "title": "神様が地球世界に6千年間摂理を行ない最後に創造目的の理想世界を成す。",
+    "file": "stories/story46.txt"
+  },
+  {
+    "id": "story47",
+    "title": "3月15日の朝7時窓の外でカササギが力強くさえずる声が聞こえた。",
+    "file": "stories/story47.txt"
+  },
+  {
+    "id": "story48",
+    "title": "「いつも線だ」と神様がおっしゃった。",
+    "file": "stories/story48.txt"
+  },
+  {
+    "id": "story49",
+    "title": "心、活火山",
+    "file": "stories/story49.txt"
+  },
+  {
+    "id": "story50",
+    "title": "先生だ。みんな元気にしているか。",
+    "file": "stories/story50.txt"
+  },
+  {
+    "id": "story51",
+    "title": "誰かが言わなくても、時になったから神様の創造の法則によってうららかな春になり、",
+    "file": "stories/story51.txt"
+  },
+  {
+    "id": "story52",
+    "title": "険しい地域は開発すれば理想世界になる。",
+    "file": "stories/story52.txt"
+  },
+  {
+    "id": "story53",
+    "title": "春が来る。",
+    "file": "stories/story53.txt"
+  },
+  {
+    "id": "story54",
+    "title": "神様と聖霊があなたたちをいつも顧み、何をしているか見ていらっしゃる。",
+    "file": "stories/story54.txt"
+  },
+  {
+    "id": "story55",
+    "title": "聖霊が感動を与えるから自動機械になって行なう。",
+    "file": "stories/story55.txt"
+  },
+  {
+    "id": "story56",
+    "title": "そうしたら、そのあとどうなるだろうか。",
+    "file": "stories/story56.txt"
+  },
+  {
+    "id": "story57",
+    "title": "今日はあなたたちみんなのために祈ってあげたい。",
+    "file": "stories/story57.txt"
+  },
+  {
+    "id": "story58",
+    "title": "険しい人生の波をかき分けて進みつつ大胆に行ないなさい。",
+    "file": "stories/story58.txt"
+  },
+  {
+    "id": "story59",
+    "title": "走るとき、隣の人を見て足並みを揃えて走ったときに、行けないはずの人も行けるようになる。",
+    "file": "stories/story59.txt"
+  },
+  {
+    "id": "story60",
+    "title": "人生を生きること",
+    "file": "stories/story60.txt"
+  },
+  {
+    "id": "story61",
+    "title": "聖霊の体になり、神様が言う通りに信じて行なえばしるしが起こる。",
+    "file": "stories/story61.txt"
+  },
+  {
+    "id": "story62",
+    "title": "いつも測量するときは測量基準点から測量をしてこそ、公義だ。",
+    "file": "stories/story62.txt"
+  },
+  {
+    "id": "story63",
+    "title": "同じ主管圏で生きていても、近くもあり、遠くもある。",
+    "file": "stories/story63.txt"
+  },
+  {
+    "id": "story64",
+    "title": "最近は山の向こうから春風と共に息を切らしている声が聞こえてくる。",
+    "file": "stories/story64.txt"
+  },
+  {
+    "id": "story65",
+    "title": "行く道は遠いが経ながら行なうから手に負えそうだ。",
+    "file": "stories/story65.txt"
+  },
+  {
+    "id": "story66",
+    "title": "いつの間にか、縮小した一つの歳月が過ぎ、また一つの歳月が来た。",
+    "file": "stories/story66.txt"
+  },
+  {
+    "id": "story67",
+    "title": "それぞれ、神様の仕事をするとき使うようにとくださった能力がある。",
+    "file": "stories/story67.txt"
+  },
+  {
+    "id": "story68",
+    "title": "あなたたちの信仰通りに治ることを願う。",
+    "file": "stories/story68.txt"
+  }
 ]
