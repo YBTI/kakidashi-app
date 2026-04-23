@@ -13,7 +13,7 @@ const authError = document.getElementById('auth-error');
 const appContainer = document.getElementById('app');
 
 // 固定パスワード（ここで変更可能です）
-const FIXED_PASSWORD = '846104';
+const FIXED_PASSWORD = '8462024';
 
 let postsData = [];
 
