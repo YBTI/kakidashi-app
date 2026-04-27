@@ -339,9 +339,14 @@
     "title": "あなたたちの信仰通りに治ることを願う。",
     "file": "stories/story68.txt"
   },
-    {
+  {
     "id": "story69",
     "title": "「感謝する人に願う祝福をくださる」だ。",
     "file": "stories/story69.txt"
+  },
+  {
+    "id": "story70",
+    "title": "過去を感謝し告白しなさい。",
+    "file": "stories/story90.txt"
   }
 ]
