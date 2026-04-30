@@ -353,5 +353,15 @@
     "id": "story71",
     "title": "あなたたちの心配、憂いを主に告げなさい。",
     "file": "stories/story71.txt"
+  },
+  {
+    "id": "story72",
+    "title": "水石一つを見るとき、ただ見るだけでは「すべすべだ。不思議だ」と言って終わる。",
+    "file": "stories/story72.txt"
+  },
+  {
+    "id": "story73",
+    "title": "一度過ぎたら二度と戻ってこない時間と神様の御心だ。",
+    "file": "stories/story73.txt"
   }
 ]
